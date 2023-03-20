@@ -38,20 +38,16 @@ header nav #hamburger-menu{
 
 /*****  HERO SECTION  *****/
 
-#hero-section{
+#hero{
     padding: 2em 0;
 }
 
-#hero-section .col{
+#hero .col{
     width: 100%;
     padding: 1em;
 }
 
-#hero-section .card-container{
-
-}
-
-#hero-section .card{
+#hero .card{
     width: 100%;
     border: 3px dashed black;
     border-radius: 15px;
@@ -64,6 +60,10 @@ header nav #hamburger-menu{
 
 /*****  PLANNING SECTION  *****/
 
+#planning{
+    padding: 2em 0;
+}
+
 #planning .col{
     padding: 1em;
 }
@@ -72,6 +72,58 @@ header nav #hamburger-menu{
     border: 3px dashed black;
 } 
 
+/*****  TESTIMONIAL SECTION  *****/
+
+#testimonial{
+    padding: 2em 0;
+}
+
+#testimonial .col{
+    padding: 1em;
+}
+
+#testimonial .card{
+    padding: 1em;
+}
+
+#testimonial .card div{
+    border: 3px dashed black;
+}
+
+/*****  TESTIMONIAL SECTION  *****/
+
+#benefits{
+    padding: 2em 0;
+}
+
+#benefits .col{
+    padding: 1em;
+}
+
+/*****  ABOUT US SECTION  *****/
+
+#aboutus{
+    padding: 2em 0;
+}
+
+#aboutus .col{
+    padding: 1em;
+}
+
+/*****  GET START SECTION  *****/
+
+#get-start{
+    padding: 2em 0;
+}
+
+#get-start .col{
+    padding: 1em;
+}
+
 /*********************  
 ******  FOOTER ******* 
 *********************/
+
+#footer{
+    padding: 2em 0;
+}
