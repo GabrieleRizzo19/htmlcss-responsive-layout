@@ -4,9 +4,11 @@
 .min-height150{ min-height: 150px; }
 .min-height200{ min-height: 200px; }
 .min-height300{ min-height: 300px; }
+.min-height350{ min-height: 350px; }
 .min-height400{ min-height: 400px; }
 .min-height500{ min-height: 500px; }
 .min-height600{ min-height: 600px; }
+.min-height700{ min-height: 700px; }
 .min-height750{ min-height: 750px; }
 .min-height800{ min-height: 800px; }
 .min-height900{ min-height: 900px; }
@@ -17,7 +19,7 @@
 .max-width800{ max-width: 800px; }
 .max-width1000{ max-width: 1000px; }
 
-
+.width800perc{ width: 80%; }
 .width100perc{ width: 100%; }
 
 .bg-white{ background-color: white; }
@@ -54,6 +56,8 @@
 .col70{ width: 70%; }
 .col80{ width: 80%; }
 .col90{ width: 90%; }
+
+.container-85perc{ width: 85%; }
 
 
 

@@ -19,10 +19,6 @@
 ******  HEADER ****** 
 *********************/
 
-header nav{
-    padding: 0 10%;
-}
-
 header nav #extended-menu{
     display: none;
 }
@@ -35,6 +31,26 @@ header nav #hamburger-menu{
 /*********************  
 *******  MAIN ******** 
 *********************/
+
+/*****  HERO SECTION  *****/
+
+#hero-section{
+    padding-top: 2em;
+}
+
+#hero-section .card-container{
+    gap: 1em;
+}
+
+#hero-section .card{
+    border: 3px black solid;
+    border-radius: 15px;
+}
+
+#demo-card{
+    gap: 1em;
+}
+
 
 
 
