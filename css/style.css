@@ -39,7 +39,7 @@ header nav #hamburger-menu{
 /*****  HERO SECTION  *****/
 
 #hero-section{
-    padding-top: 2em;
+    padding: 2em 0;
 }
 
 #hero-section .col{
@@ -48,12 +48,12 @@ header nav #hamburger-menu{
 }
 
 #hero-section .card-container{
-    
+
 }
 
 #hero-section .card{
     width: 100%;
-    border: 3px black solid;
+    border: 3px dashed black;
     border-radius: 15px;
 }
 
@@ -62,7 +62,15 @@ header nav #hamburger-menu{
 }
 
 
+/*****  PLANNING SECTION  *****/
 
+#planning .col{
+    padding: 1em;
+}
+
+#planning .col div{
+    border: 3px dashed black;
+} 
 
 /*********************  
 ******  FOOTER ******* 
