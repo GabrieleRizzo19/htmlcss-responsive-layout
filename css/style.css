@@ -15,6 +15,10 @@
     background-color: #0084fd;
 }
 
+.container{
+    width: 100%;
+}
+
 /*********************  
 ******  HEADER ****** 
 *********************/
@@ -38,11 +42,17 @@ header nav #hamburger-menu{
     padding-top: 2em;
 }
 
+#hero-section .col{
+    width: 100%;
+    padding: 1em;
+}
+
 #hero-section .card-container{
-    gap: 1em;
+    
 }
 
 #hero-section .card{
+    width: 100%;
     border: 3px black solid;
     border-radius: 15px;
 }
@@ -57,4 +67,3 @@ header nav #hamburger-menu{
 /*********************  
 ******  FOOTER ******* 
 *********************/
-
