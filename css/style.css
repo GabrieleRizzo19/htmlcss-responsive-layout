@@ -1,9 +1,44 @@
+
+/********  RESET  *********/
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
-    background-color: green;
+/*********************  
+******  GENERIC ****** 
+*********************/
+
+.bg-blue-layout{
+    background-color: #0084fd;
 }
+
+/*********************  
+******  HEADER ****** 
+*********************/
+
+header nav{
+    padding: 0 10%;
+}
+
+header nav #extended-menu{
+    display: none;
+}
+
+header nav #hamburger-menu{
+    display: block;
+    color: white;
+}
+
+/*********************  
+*******  MAIN ******** 
+*********************/
+
+
+
+/*********************  
+******  FOOTER ******* 
+*********************/
+
