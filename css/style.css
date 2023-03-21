@@ -227,6 +227,10 @@ header nav #hamburger-menu{
     color: white;
 }
 
+#planning .col:first-child h2{
+    font-size: 2.5rem;
+}
+
 #planning .card{
     border-radius: 30px;
     color: black;
@@ -248,15 +252,15 @@ header nav #hamburger-menu{
     display: block;
 }
 
-#planning .col:first-child img, #planning .col:first-child h2 , #planning .col:first-child p{
+
+
+#planning .col:first-child img, 
+#planning .col:first-child h2, 
+#planning .col:first-child p{
     margin-bottom: 2rem;
 }
 #planning .card img, #planning .card h2{
     margin-bottom: 1rem;
-}
-
-#planning .card p{
-    margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 992px) {
