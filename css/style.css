@@ -12,8 +12,10 @@
 ******  GENERIC ****** 
 *********************/
 
-.bg-blue-layout{
-    background-color: #0084fd;
+:root {
+    --primary-col: #0084fd;
+    --primary-col-light: #b5ddff;
+    --secondary-col: #9792e4;
 }
 
 .container{
@@ -22,18 +24,24 @@
     max-width: 1200px;
 }
 
+a{
+    color: inherit;
+}
+
 /*********************  
 ******  HEADER ****** 
 *********************/
 
-header a{
+#header{
+    background-color: var(--primary-col);
+}
+
+#header a{
     color: white;
     margin-right: 2em;
 }
 
-
-
-#get-start-button{
+#header #get-start-button{
     padding: 0.5em 1em;
     border-radius: 30px;
     background-color: white;
@@ -81,15 +89,91 @@ header nav #hamburger-menu{
 }
 
 #hero .card{
-    width: 100%;
+    height: 100%;
     border: 3px dashed black;
     border-radius: 15px;
+    text-align: center;
+    padding: 1em;
+    background-color: var(--primary-col-light);
 }
 
-#demo-card div{
-    padding: 1em;
+#hero #demo-card{
+    text-align: left;
+    padding-bottom: 0;
+}
+
+#hero .card h2{
+    color: var(--primary-col);
+}
+
+#hero .card p{
+    color: #5a6e7f;
+    font-weight: bold;
+}
+
+#hero .card h2 , #hero .card p{
+    margin-bottom: 2rem;
+}
+
+#demo-card-col > div{
+    padding: 1em 1em 0 1em;
     width: 100%;
-    border: 5px solid black;
+}
+
+#demo-card a{
+    background-color: var(--primary-col);
+    border-radius: 30px;
+    padding: 1em 4em;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+#apple-static{
+    display: inline-block;
+}
+
+#apple-bounce{
+    display: none;
+}
+
+#demo-card-col a:hover #apple-static{
+    display: none;
+}
+
+#demo-card-col a:hover #apple-bounce{
+    display: inline-block;
+}
+
+#demo-card img{
+    width: 100%;
+    display: block;
+    transition: 0.3s;
+}
+
+.hero-card-top-icon{
+    color: var(--primary-col);
+    font-size: 6rem;
+}
+
+@media screen and (min-width: 400px){
+
+    #demo-card img{
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width:991px) {
+
+    #demo-card img{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 500px) {
+
+    #demo-card img{
+        width: 50%;
+    }
 }
 
 @media screen and (min-width: 769px){
@@ -98,7 +182,7 @@ header nav #hamburger-menu{
         width: calc( 100% / 3);
     }
 
-    #hero #demo-card{
+    #hero #demo-card-col{
         width: calc( 100% / 3 * 2 );
     }
 }
