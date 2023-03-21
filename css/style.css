@@ -169,47 +169,6 @@ header nav #hamburger-menu{
     font-size: 6rem;
 }
 
-@media screen and (min-width: 400px) and (max-width:499px){
-
-    #demo-card img{
-        width: 75%;
-    }
-}
-
-@media screen and (min-width: 500px) and (max-width:699px) {
-
-    #demo-card img{
-        width: 60%;
-    }
-}
-
-@media screen and (min-width: 700px) and (max-width:991px) {
-
-    #demo-card img{
-        width: 50%;
-    }
-}
-
-@media screen and (min-width: 769px){
-    
-    #hero .col{
-        width: calc( 100% / 3);
-    }
-
-    #hero #demo-card-col{
-        width: calc( 100% / 3 * 2 );
-    }
-}
-
-@media screen and (min-width: 992px){
-    
-    #demo-card div{
-        width: 50%;
-    }
-}
-
-
-
 /*****  PLANNING SECTION  *****/
 
 #planning{
@@ -241,7 +200,8 @@ header nav #hamburger-menu{
 }
 
 #planning .card a{
-    padding: 1rem;
+    display: inline-block;
+    padding: 0.8rem 1rem;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     background-color: var(--secondary-col);
@@ -252,36 +212,16 @@ header nav #hamburger-menu{
     display: block;
 }
 
-
-
 #planning .col:first-child img, 
 #planning .col:first-child h2, 
 #planning .col:first-child p{
     margin-bottom: 2rem;
 }
-#planning .card img, #planning .card h2{
+
+#planning .card img, 
+#planning .card h2,
+#planning .card p{
     margin-bottom: 1rem;
-}
-
-@media screen and (min-width: 992px) {
-    
-    #planning .col{
-        width: 50%;
-        padding: 2em;
-        align-items: flex-end;
-    }
-
-    #planning .col:first-child img{
-        margin-bottom: 10rem;
-    }
-
-    #planning .col:first-child h2 {
-        margin-bottom: 3rem;
-    }
-
-    #planning .card{
-        height: 80%;
-    }
 }
 
 /*****  TESTIMONIAL SECTION  *****/
@@ -294,7 +234,6 @@ header nav #hamburger-menu{
     width: 100%;
     padding: 1em 0;
 }
-
 
 #testimonial #testimonial-text-section{
     text-align: center;
@@ -343,32 +282,6 @@ header nav #hamburger-menu{
 #testimonial .card .quote{
     font-size: 1.5rem;
 }
-
-@media screen and (min-width:500px) and (max-width:600px){
-
-    #testimonial .card img{
-        width: 50%;
-    }
-}
-
-@media screen and (min-width:601px) and (max-width:768px){
-
-    #testimonial .card img{
-        width: 40%;
-    }
-}
-
-@media screen and (min-width: 769px) {
-    
-    #testimonial .card div:first-child{
-        width: 30%;
-    }
-
-    #testimonial .card div:last-child{
-        width: 70%;
-    }
-}
-
 
 /*****  BENEFITS SECTION  *****/
 
@@ -433,20 +346,6 @@ header nav #hamburger-menu{
     margin-top: 2rem;
 }
 
-@media screen and (min-width: 769px) {
-    
-    #benefits .col{
-        width: 50%;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    
-    #benefits .col{
-        width: calc( 100% / 3);
-    }
-}
-
 /*****  ABOUT US SECTION  *****/
 
 #aboutus{
@@ -504,38 +403,6 @@ header nav #hamburger-menu{
     border-radius: 30px;
 }
 
-
-
-@media screen and (min-width: 769px) {
-    
-    #aboutus .container .col:first-child{
-        width: 70%;
-    }
-
-    #aboutus .container .col:last-child{
-        width: 30%;
-    }
-
-    #aboutus .container .col #aboutus-img-container{
-        width: 80%;
-    }
-}
-
-
-@media screen and (min-width:500px) and (max-width:600px){
-
-    #aboutus .container .col #aboutus-img-container{
-        width: 50%;
-    }
-}
-
-@media screen and (min-width:601px) and (max-width:768px){
-
-    #aboutus .container .col #aboutus-img-container{
-        width: 45%;
-    }
-}
-
 /*****  GET START SECTION  *****/
 
 #get-start{
@@ -588,7 +455,6 @@ header nav #hamburger-menu{
     text-decoration: underline;
 }
 
-
 /*********************  
 ******  FOOTER ******* 
 *********************/
@@ -618,13 +484,122 @@ header nav #hamburger-menu{
     color: var(--secondary-col);
 }
 
-
-
-
 /*********************  
 ****  MEDIA QUERY **** 
 *********************/
 
-/*****  HERO SECTION TABLET  *****/
+/* TABLET QUERY */
+
+@media screen and (min-width: 769px){
+    
+    #hero .col{
+        width: calc( 100% / 3);
+    }
+
+    #hero #demo-card-col{
+        width: calc( 100% / 3 * 2 );
+    }
+
+    #testimonial .card div:first-child{
+        width: 30%;
+    }
+
+    #testimonial .card div:last-child{
+        width: 70%;
+    }
+
+    #benefits .col{
+        width: 50%;
+    }
+
+    #aboutus .container .col:first-child{
+        width: 70%;
+    }
+
+    #aboutus .container .col:last-child{
+        width: 30%;
+    }
+
+    #aboutus .container .col #aboutus-img-container{
+        width: 80%;
+    }
+}
+
+/* DESKTOP QUERY */
 
 
+@media screen and (min-width: 992px){
+    
+    #demo-card div{
+        width: 50%;
+    }
+
+    #planning .col{
+        width: 50%;
+        padding: 2em;
+        align-items: flex-end;
+    }
+
+    #planning .col:first-child img{
+        margin-bottom: 10rem;
+    }
+
+    #planning .col:first-child h2 {
+        margin-bottom: 3rem;
+    }
+
+    #planning .card{
+        height: 80%;
+    }
+
+    #benefits .col{
+        width: calc( 100% / 3);
+    }
+
+
+}
+
+/* MEDIA QUERY PER LE IMMAGINI  */
+
+@media screen and (min-width: 400px) and (max-width:499px){
+
+    #demo-card img{
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width:699px) {
+
+    #demo-card img{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width:991px) {
+
+    #demo-card img{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:600px){
+
+    #aboutus .container .col #aboutus-img-container{
+        width: 50%;
+    }
+
+    #testimonial .card img{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:768px){
+
+    #aboutus .container .col #aboutus-img-container{
+        width: 45%;
+    }
+
+    #testimonial .card img{
+        width: 40%;
+    }
+}
