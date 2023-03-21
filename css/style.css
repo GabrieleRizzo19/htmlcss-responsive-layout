@@ -16,6 +16,7 @@
     --primary-col: #0084fd;
     --primary-col-light: #b5ddff;
     --secondary-col: #9792e4;
+    --paragraph-col: #5a6e7f;
 }
 
 .container{
@@ -93,7 +94,7 @@ header nav #hamburger-menu{
     border: 3px dashed black;
     border-radius: 15px;
     text-align: center;
-    padding: 1em;
+    padding: 2rem;
     background-color: var(--primary-col-light);
 }
 
@@ -107,7 +108,7 @@ header nav #hamburger-menu{
 }
 
 #hero .card p{
-    color: #5a6e7f;
+    color: var(--paragraph-col);
     font-weight: bold;
 }
 
@@ -126,6 +127,7 @@ header nav #hamburger-menu{
     padding: 1em 4em;
     margin-bottom: 2rem;
     color: white;
+    display: inline-block;
 }
 
 #apple-static{
@@ -360,6 +362,7 @@ header nav #hamburger-menu{
 
 #benefits{
     padding: 2em 0;
+    background-color: var(--secondary-col);
 }
 
 #benefits .container{
@@ -369,11 +372,52 @@ header nav #hamburger-menu{
 #benefits-header{
     width: 100%;
     padding: 1em;
+    text-align: center;
+    font-size: 2rem;
 }
 
 #benefits .col{
     width: 100%;
     padding: 1em;
+}
+
+#benefits .col .card{
+    padding: 2em;
+    background-color: white;
+    border-radius: 30px;
+}
+
+#benefits .col .card .benefits-number{
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--secondary-col);
+}
+
+#benefits .col .card h3{
+    color: var(--secondary-col);
+}
+
+#benefits .col .card p{
+    color: var(--paragraph-col);
+}
+
+#benefits .col .card a{
+    padding: 1em 4em;
+    background-color: var(--secondary-col);
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+#benefits .col .card .benefits-number,
+#benefits .col .card h3,
+#benefits .col .card p{
+    margin-bottom: 2rem;
+}
+
+#benefits .col .card h3{
+    margin-top: 2rem;
 }
 
 @media screen and (min-width: 769px) {
@@ -404,8 +448,49 @@ header nav #hamburger-menu{
 #aboutus .container .col{
     width: 100%;
     padding: 1em;
-    border: 3px dashed black;
+    line-height: 2rem;
 }
+
+#aboutus .container .col h1{
+    font-size: 3rem;
+    color: var(--secondary-col);
+}
+
+#aboutus .container .col h1,
+#aboutus .container .col p{
+    margin-bottom: 3rem;
+}
+
+#aboutus .container .col img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+#aboutus .container .col #aboutus-img-container{
+    width: 60%;
+}
+
+#aboutus .container .col #quote-on-image{
+    font-size: 5rem;
+    top: -15px;
+    right: -15px;
+    color: var(--secondary-col);
+}
+
+#aboutus .container .col h2{
+    color: var(--secondary-col);
+    margin-bottom: 2rem;
+}
+
+#aboutus .container .col a{
+    display: inline-block;
+    padding: 0.5em 1em;
+    color: white;
+    background-color: var(--secondary-col);
+    border-radius: 30px;
+}
+
+
 
 @media screen and (min-width: 769px) {
     

@@ -49,6 +49,9 @@
 
 .flex-wrap{ flex-wrap: wrap; }
 
+.pos-absolute{ position: absolute; }
+.pos-relative{ position: relative; }
+
 .col10{ width: 20%; }
 .col20{ width: 20%; }
 .col30{ width: 30%; }
