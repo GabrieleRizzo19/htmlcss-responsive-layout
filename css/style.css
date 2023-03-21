@@ -223,6 +223,7 @@ header nav #hamburger-menu{
     background-color: white;
     text-align: center;
     padding: 1em;
+    width: 100%;
 }
 
 #planning .card a{
