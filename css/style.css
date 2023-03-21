@@ -35,6 +35,11 @@ a{
 
 #header{
     background-color: var(--primary-col);
+    height: 70px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
 }
 
 #header a{
@@ -77,6 +82,10 @@ header nav #hamburger-menu{
 /*****  HERO SECTION  *****/
 
 #hero{
+    margin-top: 70px;
+}
+
+#hero{
     padding: 2em 0;
 }
 
@@ -91,7 +100,6 @@ header nav #hamburger-menu{
 
 #hero .card{
     height: 100%;
-    border: 3px dashed black;
     border-radius: 15px;
     text-align: center;
     padding: 2rem;
