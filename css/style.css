@@ -280,13 +280,67 @@ header nav #hamburger-menu{
     padding: 1em 0;
 }
 
-#testimonial .card{
-    padding: 1em;
+
+#testimonial #testimonial-text-section{
+    text-align: center;
 }
 
-#testimonial .card div{
-    border: 3px dashed black;
+#testimonial #testimonial-text-section h3{
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+#testimonial #testimonial-text-section h2{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--secondary-col);
+}
+#testimonial #testimonial-text-section p{
+    line-height: 2em;
+}
+
+#testimonial .card{
+    padding: 1em;
+    text-align: center;
+    line-height: 2rem;
+    color: white;
+}
+
+#testimonial .card{
+    background-color: var(--secondary-col);
+    border-radius: 50px;
+}
+
+#testimonial .card > div:first-child{
     width: 100%;
+}
+
+#testimonial .card img{
+    width: 70%;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+#testimonial .card p{
+    margin-bottom: 2rem;
+}
+
+#testimonial .card .quote{
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width:500px) and (max-width:600px){
+
+    #testimonial .card img{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:768px){
+
+    #testimonial .card img{
+        width: 40%;
+    }
 }
 
 @media screen and (min-width: 769px) {
