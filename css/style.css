@@ -145,9 +145,13 @@ header nav #hamburger-menu{
 }
 
 #demo-card img{
-    width: 100%;
+    width: 80%;
     display: block;
     transition: 0.3s;
+}
+
+#demo-card > div:last-child{
+    align-items: flex-end;
 }
 
 .hero-card-top-icon{
@@ -155,21 +159,21 @@ header nav #hamburger-menu{
     font-size: 6rem;
 }
 
-@media screen and (min-width: 400px){
+@media screen and (min-width: 400px) and (max-width:499px){
 
     #demo-card img{
         width: 75%;
     }
 }
 
-@media screen and (min-width: 500px) and (max-width:991px) {
+@media screen and (min-width: 500px) and (max-width:699px) {
 
     #demo-card img{
         width: 60%;
     }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 700px) and (max-width:991px) {
 
     #demo-card img{
         width: 50%;
@@ -200,6 +204,7 @@ header nav #hamburger-menu{
 
 #planning{
     padding: 2em 0;
+    background-color: var(--secondary-col);
 }
 
 #planning .container{
@@ -209,16 +214,58 @@ header nav #hamburger-menu{
 #planning .col{
     width: 100%;
     padding: 1em 0;
+    color: white;
 }
 
-#planning .col div{
-    border: 3px dashed black;
-} 
+#planning .card{
+    border-radius: 30px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+#planning .card a{
+    padding: 1rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: var(--secondary-col);
+}
+
+#planning img{
+    width: 100%;
+    display: block;
+}
+
+#planning .col:first-child img, #planning .col:first-child h2 , #planning .col:first-child p{
+    margin-bottom: 2rem;
+}
+#planning .card img, #planning .card h2{
+    margin-bottom: 1rem;
+}
+
+#planning .card p{
+    margin-bottom: 2rem;
+}
 
 @media screen and (min-width: 992px) {
     
     #planning .col{
         width: 50%;
+        padding: 2em;
+        align-items: flex-end;
+    }
+
+    #planning .col:first-child img{
+        margin-bottom: 10rem;
+    }
+
+    #planning .col:first-child h2 {
+        margin-bottom: 3rem;
+    }
+
+    #planning .card{
+        height: 80%;
     }
 }
 
