@@ -374,6 +374,7 @@ header nav #hamburger-menu{
     padding: 1em;
     text-align: center;
     font-size: 2rem;
+    color: white;
 }
 
 #benefits .col{
@@ -495,11 +496,11 @@ header nav #hamburger-menu{
 @media screen and (min-width: 769px) {
     
     #aboutus .container .col:first-child{
-        width: 60%;
+        width: 70%;
     }
 
     #aboutus .container .col:last-child{
-        width: 40%;
+        width: 30%;
     }
 }
 
@@ -507,6 +508,7 @@ header nav #hamburger-menu{
 
 #get-start{
     padding: 2em 0;
+    background-color: var(--secondary-col);
 }
 
 #get-start .container{
@@ -517,8 +519,42 @@ header nav #hamburger-menu{
 #get-start .col{
     width: 100%;
     padding: 1em;
+    text-align: center;
+    color: white;
 }
 
+#get-start .col h1{
+    font-size: 3rem;
+    color: #fdc15f;
+}
+
+#get-start .col h2,
+#get-start .col h1,
+#get-start .col p,
+#get-start .col a{
+    margin-bottom: 2rem;
+}
+
+#get-start .col h2{
+    margin-top: 2rem;
+}
+
+#get-start .col > a{
+    display: inline-block;
+    font-weight: bold;
+    padding: 1em 5em;
+    border-radius: 30px;
+    background-color: white;
+    color: var(--secondary-col);
+}
+
+#get-start .col small{
+    display: block;
+}
+
+#get-start .col small > a{
+    text-decoration: underline;
+}
 /*********************  
 ******  FOOTER ******* 
 *********************/
